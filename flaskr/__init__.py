@@ -1,4 +1,5 @@
 import os
+import time
 
 from flask import Flask
 
@@ -28,6 +29,7 @@ def create_app(test_config=None):
 
     @app.route('/hello')
     def hello():
+        time.sleep(5)
         return 'Hello, World!'
 
     # register the database commands

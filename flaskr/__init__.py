@@ -29,7 +29,7 @@ def create_app(test_config=None):
 
     @app.route('/hello')
     def hello():
-        time.sleep(1)
+        time.sleep(3)
         return 'Hello, World!'
 
     # register the database commands
